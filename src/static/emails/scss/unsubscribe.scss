@@ -1,0 +1,21 @@
+@import 'settings';
+
+.unsubscribe {
+
+  & .wrapper-inner {
+    padding: 5% 10% !important;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-left: 5% 10% !important;
+    }
+  }
+
+  & .container {
+    margin: 0;
+  }
+
+
+  & .columns {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,110 @@
+@import 'settings';
+@import 'foundation-emails';
+@import 'flight';
+@import 'header';
+@import 'body';
+@import 'download';
+@import 'dashboard';
+@import 'status';
+@import 'unsubscribe';
+@import 'app-download';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //font-family: gil;
+  font-family: futuraLight;
+}
+
+body,
+p,
+a {
+  font-family: futuraLight;
+  font-size: $global-font-size;
+}
+
+.blue {
+  color: $primary-color;
+}
+
+.primary-background {
+  background-color: $primary-color;
+  width: 100%;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-block {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-complementary {
+  color: $complementary-color;
+  font-family: gil;
+  font-weight: bold;
+}
+
+.clouds-title {
+  color: $primary-color;
+}
+
+.small-columns {
+  &--right {
+    & tr {
+      text-align: right;
+    }
+  }
+}
+
+.full-text { display: block}
+.split-text {display: none}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  h1 {
+    font-size: $h1-font-size - 5 !important;
+  }
+  h2 {
+    font-size: $h2-font-size - 5 !important;
+  }
+  h3 {
+    font-size: $h3-font-size - 5 !important;
+  }
+  h4 {
+    font-size: $h4-font-size - 5 !important;
+  }
+  h5 {
+    font-size: $h5-font-size - 5 !important;
+  }
+  h6 {
+    font-size: $h6-font-size - 5 !important;
+  }
+
+  a,
+  p {
+    font-size: $global-font-size - 5 !important;
+  }
+
+  .text-small {font-size: 10px !important}
+  .full-text { display: none !important}
+  .split-text {display: block !important}
+  .banner {
+    width: 100% !important;
+  }
+}

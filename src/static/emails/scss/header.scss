@@ -1,0 +1,37 @@
+@import 'settings';
+
+.header {
+  background-color: $primary-color;
+
+  & .container {
+    background-color: $primary-color;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin: 5px 0 7px 5px !important;
+    }
+  }
+
+  & .wrapper-inner {
+    padding: 17px 15px 15px 36px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0 !important;
+    }
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+}
+
+.logo {
+  height: 66px;
+  width: 261px;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  table.body img.logo {
+    height: 52px !important;
+    width: 185px !important;
+  }
+}

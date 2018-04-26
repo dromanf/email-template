@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="static/emails/css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>%%title</title>
+    <style type="text/css">
+      @font-face {
+        font-family: 'gil';
+        src: url("static/emails/fonts/GIL____.TTF");
+      }
+      @font-face {
+        font-family: "futuraLight";
+        src: url("static/emails/fonts/Futura(Light).ttf");
+      }
+    </style>
+<wrapper class="header">
+  <container>
+    <row class="collapse">
+      <columns small="8" large="10">
+        <a class="text-left" href="%%header_link">
+          <img class="float-left logo" src="static/emails/images/logo.png" alt="logo">
+        </a>
+      </columns>
+
+      <columns small="4" large="2">
+        {{> social_icons }}
+      </columns>
+    </row>
+  </container>
+</wrapper>

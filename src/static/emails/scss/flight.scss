@@ -1,0 +1,44 @@
+@import 'settings';
+
+.flight {
+
+  & .container {
+    margin: 0;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin: 10px 0 0 10px !important;
+    }
+  }
+
+  & .wrapper-inner {
+    padding: 5% 10%;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 5% 10% !important;
+    }
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+
+  &__number {
+    font-weight: bold;
+    margin: 0;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin: 7px 0 0 !important;
+    }
+  }
+
+  &__shared{
+    font-weight: bold;
+  }
+}
+
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  th.columns .tracker-link {
+    margin-right: 10px !important;
+  }
+}

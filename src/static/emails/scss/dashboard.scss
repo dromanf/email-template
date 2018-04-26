@@ -1,0 +1,86 @@
+@import 'settings';
+
+.dashboard {
+
+  & .wrapper-inner {
+    padding: 5% 10%;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 26px 0 15px !important;
+    }
+  }
+
+  & .container {
+    margin: 0;
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+
+  &__box {
+    width: 192px;
+  }
+
+  &__ori-des {
+    margin: 0;
+  }
+
+  &__terminal {
+    color: $primary-color;
+    font-family: futuraLight;
+    font-weight: bold;
+    margin: 0;
+    font-size: $h5-font-size + 25;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: $h5-font-size + 5;
+    }
+  }
+
+  &__fix-gate {
+    margin-left: 10px;
+
+    &--title {
+       margin-right: 10px;
+    }
+  }
+
+  &__city {
+    margin: 0;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 15px !important;
+    }
+  }
+
+  &__date {
+    margin: 23px 0 0;
+  }
+
+  &__time {
+    margin: 0;
+  }
+
+  &__gate {
+    font-family: gil;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: $global-font-size;
+    }
+
+    &--title {
+      font-family: gil;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: $global-font-size - 8;
+      }
+    }
+  }
+
+  &__origin-column {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-right: 150px !important;
+    }
+  }
+}
+
+.divider {
+  margin: 26px 0 10px;
+}

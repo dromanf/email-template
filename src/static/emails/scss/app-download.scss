@@ -1,0 +1,20 @@
+@import 'settings';
+
+.app-download {
+    &__title {
+        text-align: center;
+        color: $complementary-color;
+        font-family: gil;
+        font-weight: bold;
+        line-height: 30px;
+
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          font-size: 29px !important;
+          letter-spacing: 1px !important;
+          margin-bottom: 25px !important;
+        }
+    }
+    &__p {
+        font-size: 17px;
+    }
+}

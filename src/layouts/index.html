@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- <language> -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/emails/css/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>%%title</title>
+    <style type="text/css">
+      @font-face {
+        font-family: 'gil';
+        src: url("static/emails/fonts/GIL____.TTF");
+      }
+      @font-face {
+        font-family: "futuraLight";
+        src: url("static/emails/fonts/Futura(Light).ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <style> -->
+    <span class="preheader">{{description}}</span>
+    <table class="body">
+      <tr>
+        <td class="float-center" align="center" valign="top">
+          <center>
+            <container>
+
+              {{> header }}
+
+              {{> body }}
+
+              {{#block "download_app"}}
+                {{> download_app }}
+              {{/block}}
+
+              {{> banner }}
+
+            </container>
+          </center>
+        </td>
+      </tr>
+    </table>
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+

@@ -1,0 +1,62 @@
+@import 'settings';
+
+.download {
+  background-color: $download-background;
+
+  & .container {
+    background-color: $download-background;
+  }
+
+  & .wrapper-inner {
+    border-bottom: 8px solid $primary-color;
+    border-top: 4px solid $primary-color;
+    padding: 17px 15px 15px;
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0 0;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 12px !important;
+    }
+  }
+
+  &__title {
+    color: $complementary-color;
+    font-family: gil;
+    font-weight: bold;
+    line-height: 30px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 29px !important;
+      letter-spacing: 1px !important;
+      margin-bottom: 25px !important;
+    }
+  }
+
+  &__img-market {
+    display: inline-block;
+    height: 35px;
+    width: 122px;
+  }
+}
+
+img.download__img-market {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  table.body img.download__img-market {
+    display: block !important;
+    height: 35px !important;
+    width: 122px !important;
+    margin: 0 0 9px !important;
+  }
+}
+

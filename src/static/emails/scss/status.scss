@@ -1,0 +1,27 @@
+@import 'settings';
+
+.status {
+
+  & .wrapper-inner {
+    padding: 0 15px 13px 36px;
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    font-family: gil;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    text-transform: lowercase;
+  }
+
+  &__percentage {
+    margin-left: 10px;
+  }
+}
